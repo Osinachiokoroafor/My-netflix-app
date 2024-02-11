@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;800&family=Manrope:wght@500&family=Poppins:wght@100;300;400;600&display=swap');
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: #6D6D6EB2;
+    font-family: 'poppins' sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 100px;
+    color: white;
+
+}
+
+header h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+nav{
+    display: flex;
+    padding: 30px 40px;
+}
+nav img{
+    width: 120px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+}
+main section, main section a{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+main section a{
+    text-decoration: none;
+    color: #6D6D6EB2;
+}
+main img{
+    width: 150px;
+    gap: 40px;
+    cursor: pointer;
+}
+footer{
+    margin-top: 50px;
+    font-size: 10px;
+}
+footer h2{
+    border: 1px solid rgba(128, 128, 128, 0.379);
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 900px){
+    
+    
+    nav{
+        padding: 15px 20px;
+    }
+    nav img{
+        width: 50px;
+    }
+    
+    
+    header h1{
+        font-size: 40px;
+        
+    }
+    main{
+        gap: 10px;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    main section{
+        gap: 5px;
+    }
+    footer{
+        margin-bottom: 50px;
+    }
+}

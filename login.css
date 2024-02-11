@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;800&family=Manrope:wght@500&family=Poppins:wght@100;300;400;600&display=swap");
+
+*,
+*::after *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  /* font-family: 'Hanken Grotesk', sans-serif; */
+  /* font-family: 'Manrope', sans-serif;*/
+  font-family: "Poppins", sans-serif;
+}
+body::before {
+  content: "";
+  width: 100%;
+  height: 150%;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  background-image: url(login-images/image\ 2.png);
+  background-size: 100%;
+}
+nav {
+  position: absolute;
+  z-index: 1;
+  padding: 25px 60px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  flex-wrap: wrap;
+  left: 50%;
+  top: 60%;
+  width: 400px;
+  padding: 60px;
+  background: rgba(0, 0, 0, 0.75);
+  transform: translate(-50%, -50%);
+}
+.main-container h1 {
+  font-size: 35px;
+}
+.main-container .password-input {
+  background: #333333;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.main-container .input-box {
+  background: #333333;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.main-container .password-input input,
+.main-container .input-box input {
+  flex: 1;
+  border-radius: 5px;
+  outline: 0;
+  background-color: transparent;
+  padding: 20px 15px;
+  border: 1px solid rgba(123, 119, 119, 0.579);
+  font-size: 16px;
+  color: rgba(245, 245, 245, 0.768);
+}
+.main-container .link-div {
+  text-align: center;
+  border: 0;
+  padding: 10px 50px;
+  border-radius: 5px;
+  background-color: red;
+  color: #ffffff;
+  flex: 1;
+  width: 300px;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.main-container .link{
+  text-decoration: none;
+  color: #ffffff;
+}
+.remember-me {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.remember-me input {
+  display: none;
+}
+.remember-me a,
+.remember-me label {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+.social-media {
+  display: inline-flex;
+  gap: 15px;
+}
+.social-media a {
+  text-decoration: none;
+  color: #737373;
+  font-size: 13px;
+}
+.new-to-netflix {
+  font-size: 18px;
+  font-weight: 700;
+  color: #737373;
+}
+.new-to-netflix a {
+  text-decoration: none;
+  color: #ffffff;
+}
+article {
+  font-size: 15px;
+  color: #737373;
+}
+article a {
+  text-decoration: none;
+}
+
+/* --------------------footer----------------------- */
+footer {
+  position: absolute;
+  top: 121%;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.foot-text {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: flex-start;
+  /* background: rgba(0, 0, 0, 0.75); */
+  width: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+}
+.row1 {
+  grid-column: 1/5;
+}
+
+footer li {
+  list-style: none;
+  line-height: 35px;
+  color: #e5dddd49;
+}
+footer a, footer li {
+  text-decoration: none;
+  color: #e5dddd49;
+  font-size: 15px;
+}
+footer .footer-language-button {
+  background-color: transparent;
+  border: 1px solid rgba(122, 122, 122, 0.422);
+  padding: 10px 15px;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  color: rgba(222, 218, 218, 0.51);
+  margin-bottom: 20px;
+}
+footer .footer-language-button img {
+  width: 10px;
+  margin-left: 2px;
+  margin-right: 7px;
+}
+
+@media only screen and (max-width: 900px) {
+  nav img {
+    width: 80px;
+  }
+  nav {
+    padding: 10px 15px;
+  }
+
+  .main-container {
+    width: 250px;
+  }
+  .main-container h1 {
+    font-size: 20px;
+  }
+  .main-container .password-input {
+    margin-bottom: 30px;
+  }
+  .main-container .input-box {
+    margin-bottom: 15px;
+  }
+
+  .main-container .password-input input,
+  .main-container .input-box input {
+    padding: 10px 5px;
+    font-size: 10px;
+  }
+  .main-container button {
+    padding: 15px 30px;
+
+    width: 250px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .foot-text {
+    display: flex;
+    max-width: 350px;
+    flex-wrap: wrap;
+    
+  }
+  .row2, .row4{
+    flex-basis: 35%;
+  }
+  footer a, footer li{
+    font-size: 10px;
+  }
+  footer .footer-language-button{
+    padding: 5px 10px;
+  }
+}
