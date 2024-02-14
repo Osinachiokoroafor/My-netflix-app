@@ -138,7 +138,7 @@ nav button {
 }
 .row {
   display: flex;
-  border-bottom: 8px solid rgba(78, 77, 77, 0.543);
+  border-bottom: 2px solid rgba(78, 77, 77, 0.543);
   align-items: center;
   justify-items: space-between;
   padding: 50px 12%;
@@ -178,7 +178,7 @@ nav button {
     flex-direction: column;
     padding: 10px 12px;
     font-size: 18px;
-    border-bottom: 8px solid rgba(78, 77, 77, 0.543);
+    border-bottom: 2px solid rgba(78, 77, 77, 0.543);
 
 
 }
@@ -290,55 +290,37 @@ input[type="radio"]{
   font-size: 25px;
   font-weight: 500;
 }
-/* -------------------footer------------------ */
-footer{
-   display: flex;
-   margin: 0 auto;
-   width: 100%;
-   max-width: 800px;
-   align-items: center;
-   justify-content: flex-start;
-   margin-bottom: 50px;
-}
-
+/*-------------------------footer----------------- */
 .footer-container{
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-
+  padding-bottom: 4rem;
+  background-color: black;
+  
 }
 
-.row1{
-   grid-column: 1/5;
+.footer{
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 15px;
+  margin: 30px auto;
+} 
+.footer-heading{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
 }
-footer li{
-    list-style: none;
-    line-height: 35px;
-    
+.footer-heading a{
+  color: #e5dddd49;
+  text-decoration: none;
+  margin-bottom: 10px;
 }
-footer a{
-    text-decoration: none;
-    color: #e5dddd49;
-    font-size: 15px;
-}
-footer .footer-language-button{
-    background-color: transparent;
-    border: 1px solid rgba(122, 122, 122, 0.422);
-    padding: 10px 15px;
-    align-items: center;
-    justify-items: center;
-    display: flex;
-    color: rgba(222, 218, 218, 0.51);
-    margin-bottom: 20px;
-}
-footer .footer-language-button img{
-    width: 10px;
-    margin-left: 2px;
-    margin-right: 7px;
-   
-}
-footer small{
-    color: #e5dddd49;
-}
+.footer-heading a:hover{
+  color: red;
+} 
+
 
 
 /* ------------------media-queries-small-screen------------------ */
