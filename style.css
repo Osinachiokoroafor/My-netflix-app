@@ -1,135 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;800&family=Manrope:wght@500&family=Poppins:wght@100;300;400;600&display=swap');
 
+* :root {
+  --color-primary: #FFFFFF;
+  --color-primary: #000000;
+  --color-primary: #E50914;
+  --color-secondary: #8C8C8C;
+  --color-secondary: #757575;
+  --color-secondary: #00000066;
+  --color-Secondary: #303030;
+} *
+
 *,
 *::after,
 *::before {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
-  margin: 0;
-  padding: 0;
   font-family: sans-serif;
   background-color: black;
   color: #ffffff;
-  font-family: 'Poppins', sans-serif; 
+  font-weight: 400;
+    font-size: 16px;
+}
+
+header {
+  width: 100%;
+  height: 95vh;
+  background-position: center;
+  position: relative;
+  background-size: 100%;
+  background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4))
+    ,url(./images/image\ 1\ \(1\).png);
+  padding: 10px 6%;
+  border-bottom: 2px solid rgba(78, 77, 77, 0.543);
+  
+}
+
+.nav-bar{
+  display:flex;
+  align-items: center;
+  justify-content:space-between ;
+  padding:10px ;
 
 }
-header {
-  
-  width: 100%;
-  height: 90vh;
-  background-position: center;
-  background-size: 100%;
-  background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0.291) 43.75%,
-      rgba(0, 0, 0, 0.8) 100%
-    ),
-    url(image-1.png);
-  padding: 10px 6%;
-  border-bottom: 8px solid rgba(78, 77, 77, 0.543);
+
+nav button{
+  background-color: #E50914;
+  color: #FFFFFF;
+  border-radius: 3px;
+  padding: 8px;
+  border: none;
+  margin-left: 9px;
+  font-size: 14px;
+
+}
+
+.logo {
+  height:35px; 
+  /* width: 150px; */
+}
+
+.btn-1{
+ background: transparent;
+ text-align: center;
+ border: 1px solid #FFFFFF;
+ cursor: pointer ;
+
+}
+
+
+.basic-content {
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ position:absolute;
+ margin-top: 150px;
+ bottom: -70px;
+ left: 50%;
+ transform: translate(-50%,-50%) ;
+
+} 
+
+.content-heading{
+  line-height: 60px;
+  font-size: 50px;
+  font-weight: 600;
   
 }
-nav {
+.content-sub-heading{
+  font-weight: 400;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+.content-para{
+  margin-bottom: 8px;
+}
+
+.email-sign-in{
   display: flex;
-  justify-content: space-between;
+  background:#FFF ;
+  border-radius: 5px;
   align-items: center;
-  padding: 10px 0;
+  margin-top: 20px;
 }
-nav > img {
-  width: 150px;
-  cursor: pointer;
-}
-nav button {
+
+.email-sign-in input{
+  padding: 15px 30px ; 
   border: 0;
-  outline: 0;
-  background: red;
-  color: #ffffff;
-  padding: 10px 25px;
-  font-size: 12px;
-  border-radius: 2px;
-  margin-left: 30px;
-  cursor: pointer;
-}
-.language-button {
-  background-color: transparent;
-  border: 1px solid white;
-  padding: 10px 15px;
-  align-items: center;
-  display: inline-flex;
-}
-.language-button img {
-  width: 10px;
-  margin-left: 2px;
-  margin-right: 2px;
-}
-.header-content {
-  display: flex;
-  justify-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  color: white;
-  margin-top: 14%;
-  text-align: center;
-}
-.header-content h1 {
-  font-size: 45px;
-  line-height: 70px;
-  font-weight: 900;
-  margin-bottom: 0;
-  
-}
-.header-content h3 {
-  font-weight: 500;
-  margin-top: 3px;
-  margin-bottom: 0;
-  font-size: 26px;
-}
-.header-content p {
-  font-size: 20px;
-  line-height: 70px;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-.email-signup {
-  background: transparent;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-.email-signup input {
-  width: 400px;
+  margin-left: 20px;
   flex: 1;
-  border-radius: 5px;
   outline: 0;
-  background-color: transparent;
-  padding: 20px 15px;
-  border: 1px solid rgba(123, 119, 119, 0.579);
-  font-size: 16px;
-  margin-right: 10px;
-  color: rgba(245, 245, 245, 0.768);
 }
-.email-signup button {
-  padding: 15px 30px;
+
+.email-sign-in .btn-2 {
+  background-color: #E50914;
+  color: #FFFFFF;
   border: 0;
   outline: 0;
-  border-radius: 5px;
-  background-color: red;
-  color: #ffffff;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 25px;
-  font-weight: 500;
-}
-.email-signup button img {
-  width: 10px;
-}
-.btn-hover, .btn-hover2:hover {
-  background-color: rgba(255, 0, 0, 0.793);
-  cursor: pointer;
+  border-radius: 4px; 
+  padding: 15px ;
+  cursor: pointer;  
 }
 
 /* ------------features-section-----------  */
@@ -164,8 +156,6 @@ nav button {
 .img-col img{
     width: 550px;
 }
-
-
 
 /* --------------accordion---------------- */
 
@@ -321,7 +311,20 @@ input[type="radio"]{
   color: red;
 } 
 
+.btn-4{
+  background: transparent;
+  padding: 4px;
+  text-align: center;
+  color: #e5dddd49;
+  border: 1px solid #e5dddd49 ;
+  cursor: pointer ;
+ 
+ }
 
+ .btn-4 .small-icon{
+  position: relative;
+  top: 2px;
+ }
 
 /* ------------------media-queries-small-screen------------------ */
 @media only screen and (max-width: 900px){
@@ -426,9 +429,7 @@ input[type="radio"]{
         margin: 0 ;
         
         justify-items: center;
-        align-items: center;
-        
-        
+        align-items: center;   
         
     }
     .footer-container .row2{
