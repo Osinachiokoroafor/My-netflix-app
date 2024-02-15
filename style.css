@@ -104,6 +104,7 @@ nav button{
   border-radius: 5px;
   align-items: center;
   margin-top: 20px;
+
 }
 
 .email-sign-in input{
@@ -113,8 +114,7 @@ nav button{
   flex: 1;
   outline: 0;
 }
-
-.email-sign-in .btn-2 {
+.email-sign-in .btn-2{
   background-color: #E50914;
   color: #FFFFFF;
   border: 0;
@@ -173,9 +173,10 @@ nav button{
 
 }
 .Questions-and-ans h2{
+    padding-top: 20px;
     text-align: center;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 .accodion{
@@ -236,50 +237,24 @@ input[type="radio"]{
     align-items: center;
     color: white;
     margin-top: 14px;
-    text-align: center;
     width: 100%;
     margin-bottom: 40px;
+ }
+ 
+.accodion-email-signup input{
+  width: 350px;
+
 }
+
 .accodion-email-signup .accodion-p{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 70px;
     margin-top: 0;
     margin-bottom: 5px;
     text-align: center;
-    
-}
-.email-signup2 {
-  background: transparent;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+} 
 
-}
-.email-signup2 input {
-  width: 400px;
-  flex: 1;
-  border-radius: 5px;
-  outline: 0;
-  background-color: transparent;
-  padding: 20px 15px;
-  border: 1px solid rgba(123, 119, 119, 0.579);
-  font-size: 16px;
-  margin-right: 10px;
-  color: rgba(245, 245, 245, 0.768);
-}
-.email-signup2 button {
-  padding: 15px 30px;
-  border: 0;
-  outline: 0;
-  border-radius: 5px;
-  background-color: red;
-  color: #ffffff;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 25px;
-  font-weight: 500;
-}
+
 /*-------------------------footer----------------- */
 .footer-container{
   padding-bottom: 4rem;
@@ -368,7 +343,7 @@ input[type="radio"]{
         margin-top: 0;
        
     }
-    .email-signup button{
+    /* .email-signup button{
         font-size: 12px;
         padding: 9px;
     }
@@ -376,7 +351,7 @@ input[type="radio"]{
         width: 150px;
         padding: 10px 12px;
         margin-right: 6px;
-    }
+    } */
     .row{
         display: flex;
         align-items: center;

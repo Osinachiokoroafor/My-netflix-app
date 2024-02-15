@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     height: 100vh;
     font-family: 'poppins', sans-serif;
+
 }
 
 .logo {
@@ -512,29 +513,41 @@ li a {
     border-radius: 2px;
     cursor: pointer;
 }
+.main-container{
+    width: 100%;
+    /* margin-left: 15px; */
+}
 
 .movie-section1 {
     display: flex;
     flex-direction: column;
     position: absolute;
-    gap: .4rem;
-    top: 67.2%;
-    left: 2%;
+    gap: 10px;
+    bottom: -110px;
+    /* left: 2%; */
     overflow: hidden;
-    ;
-
 }
+
+.movie-section1 .image-para  {
+    margin-left: 20px;
+}
+/* .movie-section1 .trailer {
+    width: 210px;
+} */
+
 
 .list1 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     width: 100%;
     gap: 5px;
+    /* margin-left: 20px; */
 }
 
 .trailer {
-    width: 18.2rem;
+    width: 100%;
+    margin-left: 10px;
     height: 9.34rem;
    
 }
@@ -551,10 +564,11 @@ li a {
 }
 
 .movie-section2 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: .4rem;
-    margin-left: 1.8rem;
+    /* margin-left: 1.8rem; */
     margin-top: 1.8rem;
 }
 
@@ -565,11 +579,11 @@ li a {
     align-items: center;
     gap: 1rem;
 }
-
+/* 
 .trailer1 {
     width: 18.22rem;
     height: 25rem;
-}
+} */
 
 .movie-section3 {
     display: flex;
@@ -591,14 +605,14 @@ li a {
     display: flex;
     flex-direction: column;
     gap: .4rem;
-    margin-left: 1.8rem;
+    /* margin-left: 1.8rem; */
     margin-top: 1.8rem;
 }
 
-.trailer3 {
+/* .trailer3 {
     width: 8rem;
     height: 8rem;
-}
+} */
 
 .arrow-left {
     position: absolute;
